@@ -1,0 +1,128 @@
+/* Genel Ayarlar */
+body {
+  text-align: center;
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  font-family: "Arvo", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #dbedf3;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+  margin-top: 30px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.set {
+  margin: 5% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Drum Butonlar */
+.drum {
+  outline: none;
+  border: 5px solid #404b69;
+  font-size: 3rem;
+  font-family: "Arvo", cursive;
+  font-weight: bold;
+  color: #da0463;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #dbedf3;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.drum:hover {
+  background-color: #c8d5e3;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.drum:active {
+  background-color: #da0463;
+  color: white;
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Arka Planlar */
+.w {
+  background-image: url("images/tom1.png");
+  background-size: cover;
+}
+
+.a {
+  background-image: url("images/tom2.png");
+  background-size: cover;
+}
+
+.s {
+  background-image: url("images/tom3.png");
+  background-size: cover;
+}
+
+.d {
+  background-image: url("images/tom4.png");
+  background-size: cover;
+}
+
+.j {
+  background-image: url("images/snare.png");
+  background-size: cover;
+}
+
+.k {
+  background-image: url("images/kick.png");
+  background-size: cover;
+}
+
+.l {
+  background-image: url("images/crash.png");
+  background-size: cover;
+}
+
+/* Hata Durumu */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Basıldığında Görsel Efekt */
+.pressed {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
+}
